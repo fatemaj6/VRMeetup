@@ -73,6 +73,7 @@ PlayerSettings:
   androidStartInFullscreen: 1
   androidRenderOutsideSafeArea: 1
   androidUseSwappy: 0
+  androidDisplayOptions: 1
   androidBlitType: 0
   androidResizeableActivity: 1
   androidDefaultWindowWidth: 1920
@@ -85,10 +86,11 @@ PlayerSettings:
   androidApplicationEntry: 2
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 0
+  runInBackground: 1
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
   Force IOS Speakers When Recording: 0
+  audioSpatialExperience: 0
   deferSystemGesturesMode: 0
   hideHomeButton: 0
   submitAnalytics: 1
@@ -276,6 +278,9 @@ PlayerSettings:
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
   AndroidIsGame: 1
+  androidAppCategory: 3
+  useAndroidAppCategory: 1
+  androidAppCategoryOther: 
   AndroidEnableTango: 0
   androidEnableBanner: 1
   androidUseLowAccuracyLocation: 0
@@ -564,6 +569,7 @@ PlayerSettings:
   - serializedVersion: 2
     m_BuildTarget: Android
     m_EncodingQuality: 1
+  m_BuildTargetGroupHDRCubemapEncodingQuality: []
   m_BuildTargetGroupLightmapSettings: []
   m_BuildTargetGroupLoadStoreDebugModeSettings: []
   m_BuildTargetNormalMapEncoding:
@@ -839,9 +845,24 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
-    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
-    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS
+    Android: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    EmbeddedLinux: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    GameCoreScarlett: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    GameCoreXboxOne: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Kepler: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    LinuxHeadlessSimulation: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Nintendo Switch: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Nintendo Switch 2: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    PS4: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    PS5: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    QNX: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Standalone: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    VisionOS: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    WebGL: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    Windows Store Apps: USE_INPUT_SYSTEM_POSE_CONTROL;USE_STICK_CONTROL_THUMBSTICKS;READY_PLAYER_ME
+    XboxOne: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
+    iPhone: READY_PLAYER_ME
+    tvOS: READY_PLAYER_ME;UNITY_POST_PROCESSING_STACK_V2
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend:
@@ -955,11 +976,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: ebd059f2-c40f-4ffc-a317-d424827b7db1
+  cloudProjectId: 311a963e-cd4f-4831-a18a-00112f27c7e1
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: VRMeetup
-  organizationId: hakim-02
+  projectName: vr-meetup-sda
+  organizationId: fatemajunaed
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

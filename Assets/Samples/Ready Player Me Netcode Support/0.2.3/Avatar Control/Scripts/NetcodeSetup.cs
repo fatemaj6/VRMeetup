@@ -20,7 +20,7 @@ namespace ReadyPlayerMe.NetcodeSupport
             clientButton.onClick.AddListener(() => NetworkManager.Singleton.StartClient());
             startButton.onClick.AddListener(() =>
             {
-                NetworkPlayer.InputUrl = urlField.text;
+                // NetworkPlayer.InputUrl = urlField.text;
                 startPanel.SetActive(false);
                 connectionPanel.SetActive(true);
             });
